@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class StudentsModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'student_tbl';
+    protected $table            = 'tbl_students';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['firstname', 'middlename', 'lastname', 'address', 'course', 'yearlevel', 'studentprofile'];
+    protected $allowedFields    = ['student_name', 'student_id', 'student_section', 'student_course', 'student_batch', 'student_grade_level', 'student_profile'];
 
     // Dates
     protected $useTimestamps = false;
